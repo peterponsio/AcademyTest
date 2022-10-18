@@ -1,0 +1,4 @@
+<app-nav (filterList)="filterLIst($event)" (refreshCall)="refreshWindow($event)"></app-nav>
+<div *ngFor="let item of listMemes | searchFilter: filterSentence;" class=" my-5 mx-5 flex flex-col gap-4">
+    <app-card-item [item]="item"></app-card-item>
+</div>
